@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Guide</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: url('background.gif') no-repeat center center fixed;
+          background-size: cover;
+          align-items: center;
+        }
+
+        .header {
+          background-color: rgba(0, 0, 0, 0.7); /* Transparent dim black */
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .contentbox-main {
+          max-width: 900px;
+          width: 90%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.7);
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .content {
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 20px;
+          margin: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h2 {
+          color: #333;
+        }
+
+        ul {
+          list-style: disc;
+        }
+
+        a {
+          text-decoration: none;
+          color: #007bff;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        .footer {
+          background-color: rgba(0, 0, 0, 0.7); /* Transparent dim black */
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: center;
+         }
+         .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+         }
+         .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+         }
+         .nav-links ul li:after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+         }
+         .nav-links ul li:hover:after{
+            width: 100%;
+         }
+    </style>
+</head>
+
+<body>
+    
+    <header class="header">
+        <img class="logo" src="logo.jpg" alt="Your Logo" style="width: 150px;">
+        <h1>Web Development Guide - An Overview</h1>
+        <p>Web development involves a wide range of skills and technologies.</p>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="web_development_guide.html">COURSE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>   
+            </div>
+        </nav>
+    </header>
+<div class="contentbox-main">
+    <section class="content">
+        <h2>What is Web Development?</h2>
+        <img src="web-developer.gif" alt="web developer" style="display: block; margin: auto; margin-bottom: 20px; width: 90%;">
+        <p>Web development involves two main components:</p>
+        <ul>
+            <li><b>Front-end Development</b>: This is about creating the user interface and the visual elements of a website using HTML, CSS, and JavaScript. It's what users see and interact with.</li>
+            <li><b>Back-end Development</b>: This involves server-side programming, databases, and server management. It handles the logic behind the scenes and data storage.</li>
+        </ul>
+    </section>
+    <section class="content">
+        <h2>Skills and Knowledge</h2>
+        <img src="webdev-bg.gif" alt="web developer" style="display: block; margin: auto; margin-bottom: 20px; width: 90%;">
+        <p>To excel in web development, you'll need to learn various programming languages, frameworks, and tools. This may include HTML, CSS, JavaScript, and popular frameworks like React, Node.js, and Django.</p>
+    </section>
+    <section class="content">
+        <h2>Glossary</h2>
+        <p>To help you navigate the web development world, here are a few key terms:</p>
+        <ul>
+            <li><strong>HTML (Hypertext Markup Language):</strong> The standard markup language for documents designed to be displayed in a web browser.</li>
+            <li><strong>CSS (Cascading Style Sheets):</strong> A style sheet language used for describing the look and formatting of a document written in HTML.</li>
+            <li><strong>JavaScript:</strong> A programming language used to make web pages interactive.</li>
+            <li><strong>Framework:</strong> A pre-built set of tools and libraries that simplifies the development process.</li>
+        </ul>
+    </section>
+    <section class="content">
+        <h2>Recommended Resources</h2>
+        <p>Here are some resources to kickstart your web development journey:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>: A comprehensive online course for beginners.</li>
+            <li><a href="https://www.hostinger.ph/tutorials/web-development-tools" target="_blank">Hostinger Tutorials</a>: A collection of free web development tools.</li>
+            <li><a href="https://soshace.com/40-web-development-books/" target="_blank">Soshace.blog</a>: A list of web development books for further reading.</li>
+        </ul>
+    </section>
+</div>
+    <footer class="footer">
+        &copy; Web Development (COMP 20163) |  Laboratory Exercise | Created by Daniel Alzona & Sheila Cenita
+    </footer>
+</body>
+</html>
